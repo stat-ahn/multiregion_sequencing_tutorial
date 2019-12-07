@@ -1,0 +1,41 @@
+base_measure_params:
+  alpha: 1
+  beta: 1
+beta_binomial_precision_params:
+  prior:
+    rate: 0.001
+    shape: 1.0
+  proposal:
+    precision: 0.01
+  value: 1000
+concentration:
+  prior:
+    rate: 0.001
+    shape: 1.0
+  value: 1.0
+density: pyclone_beta_binomial
+init_method: disconnected
+num_iters: 10000
+samples:
+  SRR385938:
+    error_rate: 0.001
+    mutations_file: outputall/yaml/SRR385938.yaml
+    tumour_content:
+      value: 1.0
+  SRR385939:
+    error_rate: 0.001
+    mutations_file: outputall/yaml/SRR385939.yaml
+    tumour_content:
+      value: 1.0
+  SRR385940:
+    error_rate: 0.001
+    mutations_file: outputall/yaml/SRR385940.yaml
+    tumour_content:
+      value: 1.0
+  SRR385941:
+    error_rate: 0.001
+    mutations_file: outputall/yaml/SRR385941.yaml
+    tumour_content:
+      value: 1.0
+trace_dir: trace
+working_dir: /SNUGEN1/Research/2019/ASY/github-multiregion/pyclone/outputall

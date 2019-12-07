@@ -1,0 +1,59 @@
+########################################################################################################################
+# Example file for running a single sample analysis using PyClone with binomial density.
+#
+# Original Authour : Andrew Roth
+########################################################################################################################
+
+working_dir: . 
+trace_dir: trace 
+
+density: pyclone_beta_binomial
+num_iters: 1000
+base_measure_params:
+  alpha: 1
+  beta: 1
+
+concentration:
+  # Initial value
+  value: 1.0
+  
+  prior:
+    shape: 1.0
+    rate: 0.001
+    
+beta_binomial_precision_params:
+  value: 1000
+  
+  # Parameters for Gamma prior distribution
+  prior:
+    shape: 1.0
+    rate: 0.0001
+  
+  # Precision of Gamma proposal function for MH step
+  proposal:
+    precision: 0.01 
+
+samples:
+  SRR385938:
+    mutations_file: yaml/SRR385938.yaml
+    tumour_content:
+      value: 1.0
+    error_rate: 0.001
+    
+  SRR385939:
+    mutations_file: yaml/SRR385939.yaml
+    tumour_content:
+      value: 1.0
+    error_rate: 0.001
+    
+  SRR385940:
+    mutations_file: yaml/SRR385940.yaml
+    tumour_content:
+      value: 1.0
+    error_rate: 0.001
+    
+  SRR385941:
+    mutations_file: yaml/SRR385941.yaml
+    tumour_content:
+      value: 1.0
+    error_rate: 0.001        
