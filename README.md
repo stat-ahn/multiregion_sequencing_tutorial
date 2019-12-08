@@ -5,12 +5,14 @@
 * pyclone/
 * clomial/
 * citup/
+* lichee/
+* clonevol/
 
 # Analyses
 
 ### Clustering variants using PyClone
 
-* pyclone.md: pyclone codes
+* pyclone.md: instruction for running PyClone
 * config.yaml: configuration file with beta-Binomial density
 * tsv/: input tsv file for PyClone
 * yaml/: converted yaml file
@@ -23,14 +25,20 @@
 
 ### Constructing tree using CITUP 
 
+* citup.md: instruction for running CITUP
 * code-citup-input.R: prepare input data format
 * code-citup-output.R: check output data format
-* citup.md: instruction for running CITUP
-
 
 ### Constructing tree using LICHeE
+
+* lichee.md: instruction for running LICHeE
 * code-lichee-input.R: prepare input data format
-* lichee.md: instruction for running CITUP
+* code-lichee-input.Rmd: R markdown
+
+### Constructing tree using ClonEvol
+
+* clonevol.md: instruction for running ClonEvol
+* code-clonevol.R: prepare input data format
 
 
 ## Key words: multi-regional sequencing, heterogeneity, clonal evolution 

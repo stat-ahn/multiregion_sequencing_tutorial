@@ -1,4 +1,14 @@
-setwd("../") #working directory
+---
+title: "code-lichee-input"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+require("knitr")
+knitr::opts_knit$set(root.dir = "D:/OneDrive/Blog/github-multiregion/multiregion_sequencing_tutorial/" )
+```
+
+```{r echo=TRUE, warning=FALSE, message=FALSE}
 tsvfilelists <- c("data/tsv/SRR385938.tsv",
                "data/tsv/SRR385939.tsv",
                "data/tsv/SRR385940.tsv",
@@ -70,5 +80,16 @@ a.5 <- a.4 %>%
     select(chr,pos,description, Normal, starts_with("SRR385") )
     colnames(a.5)[1] <- "#chr"
     
-write.table(a.5, file='lichee/SRR385-filter-lichee.tsv', quote=FALSE, sep='\t', col.names = FALSE, row.names=FALSE)
+```
 
+```{r}    
+head(a.1)
+head(a.2)
+head(a.3)
+head(a.4)
+head(a.5)
+```
+
+```{r echo=TRUE, warning=FALSE, message=FALSE}    
+write.table(a.5, file='lichee/SRR385-filter-lichee.tsv', quote=FALSE, sep='\t', col.names = FALSE, row.names=FALSE)
+```
