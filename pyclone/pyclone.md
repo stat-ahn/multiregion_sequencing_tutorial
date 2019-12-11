@@ -15,6 +15,6 @@ PyClone build_mutations_file --in_file tsv/SRR385938.tsv --out_file yaml/SRR3859
 PyClone build_mutations_file --in_file tsv/SRR385939.tsv --out_file yaml/SRR385939.yaml
 PyClone build_mutations_file --in_file tsv/SRR385940.tsv --out_file yaml/SRR385940.yaml
 PyClone build_mutations_file --in_file tsv/SRR385941.tsv --out_file yaml/SRR385941.yaml
-PyClone run_analysis --config_file config.yamli
+PyClone run_analysis --config_file config.yaml
 ```
 
